@@ -6,6 +6,10 @@ import './styles/reset.css'
 import './styles/main.css'
 import App from './App'
 
+if (process.env.NODE_ENV === 'development') {
+  window.Perf = require('react-addons-perf')
+}
+
 const render = () => {
   ReactDOM.render(
     <AppContainer>
