@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 
 const styles = {
   app: {
@@ -8,15 +7,12 @@ const styles = {
   },
 }
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div style={styles.app}>
-        Welcome to React!!
+        Welcome to React
       </div>
     )
   }
 }
-
-const root = document.querySelector('#app')
-ReactDOM.render(<App />, root)
