@@ -4,7 +4,7 @@ This boilerplate includes a basic React app setup:
 
 #### Libraries
 
-- React 
+- React
 - React DOM
 - Redux
 - React Redux
@@ -15,6 +15,8 @@ This boilerplate includes a basic React app setup:
 - Webpack 2
 - Babel (Stage 1 + Regenerator Runtime)
 - ESLint
+- React Perf Addon
+- Redux DevTools Extension
 
 ## Installation
 
@@ -43,7 +45,7 @@ npm run start
 
 ## License
 
-MIT, Copyright (c) 2016 Devin Abbott
+MIT, Copyright (c) 2017 Devin Abbott
 
 ## Author
 
