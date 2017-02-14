@@ -1,8 +1,22 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+import createStyles from 'react-styles-provider'
 
 import { exampleActions } from '../state/actions'
 
+@createStyles({
+  container: {
+    padding: 20,
+    backgroundColor: 'whitesmoke',
+  },
+  item: {
+    color: 'black',
+  },
+  button: {
+    color: 'skyblue',
+    cursor: 'pointer',
+  },
+})
 @connect(
   state => ({
     items: state.example.todos,
@@ -19,20 +33,28 @@ export default class Example extends PureComponent {
   }
 
   renderItem = (item, i) => {
+    const {styles} = this.props
+
     return (
-      <div key={i}>
+      <div
+        key={i}
+        style={styles.item}
+      >
         {item}
       </div>
     )
   }
 
   render() {
-    const {items} = this.props
+    const {items, styles} = this.props
 
     return (
-      <div>
+      <div style={styles.container}>
         {items.map(this.renderItem)}
-        <div onClick={this.addItem}>
+        <div
+          style={styles.button}
+          onClick={this.addItem}
+        >
           Click to add item
         </div>
       </div>
