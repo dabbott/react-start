@@ -43,6 +43,12 @@ npm run build
 npm run start
 ```
 
+## Deploy
+
+You can deploy to heroku out of the box.
+
+You can see what it looks [here](https://react-start.herokuapp.com/) - not that it's particularly interesting.
+
 ## License
 
 MIT, Copyright (c) 2017 Devin Abbott
