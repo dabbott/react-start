@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div style={styles.app}>
-        Welcome to React!
+        Welcome to React!!
       </div>
     )
   }

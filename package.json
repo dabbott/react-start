@@ -11,17 +11,94 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.22.0",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-1": "^6.22.0",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "babel-runtime": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "webpack-dev-server": "^2.2.0",
+    "webpack": "^2.2.0"
   },
   "dependencies": {
-    "babel-runtime": "^6.22.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "stage-1",
+      "react"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb/base"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true,
+        "jsx": true
+      }
+    },
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+    "env": {
+      "mocha": true,
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "globals": {
+      "React": true,
+      "__DEV__": true
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "arrow-body-style": "off",
+      "camelcase": "off",
+      "class-methods-use-this": "off",
+      "comma-dangle": "off",
+      "generator-star-spacing": "off",
+      "global-require": "off",
+      "import/extensions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "import/no-unresolved": "off",
+      "new-parens": "off",
+      "no-console": "off",
+      "no-eval": "off",
+      "no-mixed-operators": "off",
+      "no-param-reassign": "off",
+      "no-restricted-syntax": "off",
+      "no-underscore-dangle": "off",
+      "no-use-before-define": "off",
+      "object-curly-spacing": "off",
+      "padded-blocks": "off",
+      "prefer-default-export": "off",
+      "react/jsx-uses-react": "warn",
+      "react/jsx-uses-vars": "warn",
+      "react/react-in-jsx-scope": "warn",
+      "semi": "off"
+    }
   }
 }
