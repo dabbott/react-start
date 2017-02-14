@@ -3683,8 +3683,8 @@ react-redux:
     loose-envify "^1.1.0"
 
 react-styles-provider:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/react-styles-provider/-/react-styles-provider-0.4.0.tgz#3a6fdfa00e6ddb08a61af2d51c3bbd80406b93f5"
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/react-styles-provider/-/react-styles-provider-0.4.1.tgz#eaaca020ee0b3607a514d22c1c71b1ebbd268cf8"
   dependencies:
     fast-memoize "^2.0.2"
     inline-style-prefixer "^2.0.4"
