@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
+import './styles/reset.css'
+import './styles/main.css'
 import App from './App'
 
 const render = () => {
