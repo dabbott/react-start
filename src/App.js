@@ -1,18 +1,22 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
+import { Provider } from 'react-redux'
 
-const styles = {
-  app: {
-    paddingTop: 40,
-    textAlign: 'center',
-  },
-}
+import store from './state/store'
+import Example from './containers/Example'
 
-export default class App extends Component {
+// const styles = {
+//   app: {
+//     paddingTop: 40,
+//     textAlign: 'center',
+//   },
+// }
+
+export default class App extends PureComponent {
   render() {
     return (
-      <div style={styles.app}>
-        Welcome to React!
-      </div>
+      <Provider store={store}>
+        <Example />
+      </Provider>
     )
   }
 }
